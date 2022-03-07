@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: x_factor;
+    background-color: #1c3049;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+
+}
+h1{
+    margin-top: 20px;
+    color: lightgoldenrodyellow;
+    text-align: center;
+}
+.maini{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+#text{
+    color: lightyellow;
+}
+.circle{
+    position: absolute;
+    background-color: #79005f;
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.around{
+    position: absolute;
+    background: conic-gradient(
+    indianred 0%,
+    indianred 40%,
+    blueviolet 40%,
+    blueviolet 60%,
+    darkturquoise 60%,
+    darkturquoise 100%
+    );
+    width : 63%;
+    height: 63%;
+    z-index: -2;
+    border-radius: 50%;
+}
+
+.point{
+    width: 100%;
+    height: 8%;
+    border-radius: 50%;
+    background-color: #630000;
+    display: block;
+}
+
+.pointer{
+    position: absolute;
+    bottom: 50%;
+    height: 35%;
+    width: 15px;
+    animation: rotate 10s linear infinite;
+    transform-origin: bottom center;
+}
+
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.grow{
+    animation: grow 4s linear infinite;
+}
+@keyframes grow {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.2);
+    }
+}
+
+.stop{
+    animation: stop 2s linear infinite ;
+}
+@keyframes stop {
+    from{
+        transform: scale(1.2);
+    }
+    to{
+        transform: scale(1.2);
+    }
+}
+
+.shrink{
+    animation: shrink 4s linear infinite;
+}
+@keyframes shrink {
+    from{
+        transform: scale(1.2);
+    }
+    to{
+        transform: scale(1);
+    }
+}
