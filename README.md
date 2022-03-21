@@ -1,2 +1,2 @@
-# relaxing
+# Relaxing
 Breath Relaxing program for everybody
